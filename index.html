@@ -253,7 +253,7 @@
                     <a href="https://kriegeskortelab.zuckermaninstitute.columbia.edu/people/ethan-hwang" target="_blank">Ethan Hwang</a>,
               </span>
               <span class="author-block">
-                    <a href="https://kriegeskortelab.zuckermaninstitute.columbia.edu/people/nikolaus-kriegeskorte" target="_blank">Niko Kriegeskorte</a>
+                    <a href="https://kriegeskortelab.zuckermaninstitute.columbia.edu/people/nikolaus-kriegeskorte" target="_blank">Nikolaus Kriegeskorte</a>
               </span>
             </div>
 
@@ -332,16 +332,15 @@
                 <b>News:</b>
                 <ul style="list-style-type:disc; margin:0.5em 0 0 1.5em; padding:0; text-align:left;">
                   <li>
-                    09/30/2025: Our long version paper has been released on arXiv!
+                    09/30/2025: Our long version paper is now available on arXiv!
                   </li>
                   <li>
                     09/22/2025: Our short version paper has been accepted at
                     <a href="https://brainbodyfm-workshop.github.io/#home" target="_blank">
-                      Foundation Models for the Brain and Body Workshop
-                    </a> @ NeurIPS 2025!
+                      Foundation Models for the Brain and Body Workshop @ NeurIPS 2025</a> !
                   </li>
                   <li>
-                    08/15/2025: Our <a href="https://2025.ccneuro.org/abstract_pdf/Adeli_2025_NeuroAdapter_Visual_Reconstruction_Masked_Brain_Representation.pdf" target="_blank">extended abstract</a> has been accepted at
+                    04/21/2025: Our <a href="https://2025.ccneuro.org/abstract_pdf/Adeli_2025_NeuroAdapter_Visual_Reconstruction_Masked_Brain_Representation.pdf" target="_blank">extended abstract</a> has been accepted at
                     <a href="https://2025.ccneuro.org/" target="_blank">
                       CCN 2025
                     </a>!
@@ -362,7 +361,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser_v1.png" alt="teaser" width="100%"/>
+      <img src="static/images/teaser.png" alt="teaser" width="100%"/>
       <br>
       <br>
       <p style="font-size: 1.1rem;">
@@ -380,9 +379,8 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
           <p>
-            Recent work has demonstrated that complex visual stimuli can be decoded from human brain activity using deep generative models, helping brain science researchers interpret how the brain represents real-world scenes. However, most current approaches leverage mapping brain signals into intermediate image or text feature spaces before guiding the generative process, masking the effect of contributions from different brain areas on the final reconstruction output. In this work, we propose <i>NeuroAdapter</i>, a visual decoding framework that directly conditions a latent diffusion model on brain representations, bypassing the need for intermediate feature spaces. Our method demonstrates competitive visual reconstruction quality on public fMRI datasets compared to prior work, while providing greater transparency into how brain signals shape the generation process. To this end, we contribute an Image-Brain BI-directional interpretability framework (<i>IBBI</i>) which investigates cross-attention mechanisms across diffusion denoising steps to reveal how different cortical areas influence the unfolding generative trajectory. Our results highlight the potential of end-to-end brain-to-image decoding and establish a path toward interpreting diffusion models through the lens of visual neuroscience.
+            Recent work has demonstrated that complex visual stimuli can be decoded from human brain activity using deep generative models, helping brain science researchers interpret how the brain represents real-world scenes. However, most current approaches leverage mapping brain signals into intermediate image or text feature spaces before guiding the generative process, masking the effect of contributions from different brain areas on the final reconstruction output. In this work, we propose <i>NeuroAdapter</i>, a visual decoding framework that directly conditions a latent diffusion model on brain representations, bypassing the need for intermediate feature spaces. Our method demonstrates competitive visual reconstruction quality on public fMRI datasets compared to prior work, while providing greater transparency into how brain signals shape the generation process. To this end, we contribute an Image-Brain BI-directional interpretability framework (<i>IBBI </i>) which investigates cross-attention mechanisms across diffusion denoising steps to reveal how different cortical areas influence the unfolding generative trajectory. Our results highlight the potential of end-to-end brain-to-image decoding and establish a path toward interpreting diffusion models through the lens of visual neuroscience.
           </p>
         </div>
       </div>
@@ -390,6 +388,47 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- Stimuli carousel -->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered" style="margin-top: 2rem;">Decoded Examples from Different NSD Subjects</h2>
+        
+        <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+                <img src="static/images/1_1.png"/>
+                <h3 class="subtitle has-text-centered">
+                    <div style="font-size: 1rem; margin-top: 10px;">
+                        50 stimulus-prediction pairs are randomly selected from the test set of NSD Subject 1.
+                    </div>
+            </div>
+            <div class="item">
+                <img src="static/images/2_1.png"/>
+                <h3 class="subtitle has-text-centered">
+                    <div style="font-size: 1rem; margin-top: 10px;">
+                        50 stimulus-prediction pairs are randomly selected from the test set of NSD Subject 2.
+                    </div>
+            </div>
+            <div class="item">
+                <img src="static/images/5_1.png"/>
+                <h3 class="subtitle has-text-centered">
+                    <div style="font-size: 1rem; margin-top: 10px;">
+                        50 stimulus-prediction pairs are randomly selected from the test set of NSD Subject 5.
+                    </div>
+            </div>
+            <div class="item">
+                <img src="static/images/7_1.png"/>
+                <h3 class="subtitle has-text-centered">
+                    <div style="font-size: 1rem; margin-top: 10px;">
+                        50 stimulus-prediction pairs are randomly selected from the test set of NSD Subject 7.
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+<!-- End Stimuli carousel -->
 
 
      
