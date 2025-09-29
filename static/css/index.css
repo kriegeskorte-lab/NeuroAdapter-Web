@@ -200,9 +200,25 @@ body {
     color: var(--primary-hover) !important;
 }
 
+.publication-authors img.inline-icon {
+  height: 1em;            /* match text height */
+  width: auto;            /* preserve aspect ratio */
+  /* vertical-align: middle; line up with text */
+  vertical-align: -0.1em;
+  margin-right: 0.2em;   /* small gap between icon and text */
+}
+
 .author-block {
   display: inline-block;
   margin-right: 0.5rem;
+}
+
+.author-block img.inline-icon {
+  height: 1em;            /* match text height */
+  width: auto;            /* preserve aspect ratio */
+  /* vertical-align: middle; line up with text */
+  vertical-align: -0.1em;
+  margin-right: 0.2em;   /* small gap between icon and text */
 }
 
 .publication-banner img {
@@ -586,7 +602,7 @@ code {
 
 .work-venue {
   font-size: 0.8rem;
-  color: var(--text-light);
+  color: var(--text);
   font-style: italic;
 }
 
